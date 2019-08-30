@@ -1,7 +1,7 @@
 echo "enter sizearr"
 read n
 i=$n
-echo "Entarr"
+echo "Enter arr"
 while [ $i -ne 0 ]
 do
 	read line
