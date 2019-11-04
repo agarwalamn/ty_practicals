@@ -57,9 +57,8 @@ int main(){
 	//writer thread join
 	for (i = 0; i < 10; ++i){
 		pthread_join(w[i],NULL);
+		if(i%2==0){
+			thread_join(r[i],NULL);
+		}
 	}
-	//reader thread join
-	for (i = 0; i < 5; ++i){
-		pthread_join(r[i],NULL);
-	}	
 }
